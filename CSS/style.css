@@ -1,0 +1,255 @@
+/* fazer reset as propriedades do site  */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     
+}
+
+/* Variaveis */
+
+
+
+/* Atribuir propriedades gerais ao site */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#0FC2C0; 
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #015958;
+    color: #FFFFFF;
+}
+
+.links {
+    display: flex;
+}
+
+.links li {
+    margin-left: 10px;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.links a:hover {
+    text-decoration: underline solid #FFFFFF;
+}
+/* SLIDESHOW */
+.imagem-slideshow {
+    width: 100%;
+    height: 80vh;
+    background: url('../imagens/imagem_empresa.png') center center/cover no-repeat;
+    position: relative;
+}
+
+.texto-slideshow {
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+
+.texto-slideshow h1 {
+    line-height: 50px;
+}
+
+.btn {
+    background-color: #015958;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+
+}
+
+.conteiner {
+    width: 80%;
+    margin: 100px auto;
+    text-align: justify;
+    line-height: 25px;
+}
+
+#servicos {
+    margin-top: 30px;
+}
+
+/* CARTÕES */
+
+.cartoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 40px;
+    text-align: center;
+    margin: 0px 100px; 
+}
+
+.cartao {
+    width: 200px;
+    box-shadow: 5px 5px 10px #015958;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.atendimento {
+    margin-top: 15px;
+}
+
+/* FORMULARIO */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    background-color: #8edbda;
+    border: 0px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 1000px;
+    color: black;
+
+}
+
+form .enviar{
+    width: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #015958;
+    color: white;
+}
+
+p{
+    font-weight: bold;
+}
+
+.redessociais img{
+    width:50px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.redessociais{
+    display: flex;    
+}
+
+.comunicacoes{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 597px) {
+    header {
+        flex-direction: column;
+    }
+    .links {
+        margin-top: 10px;
+    }
+
+    .links a {
+        font-weight: normal;
+        font-size: 15px;
+    }
+
+    .texto-slideshow {
+        position: relative;
+        top: 40%;
+        left: 40%;
+        width: 200px;
+        text-align: center;
+        color: white;
+    }
+
+    .conteiner {
+        margin: 30px auto;
+        font-size: 14px;
+    }
+    
+    #serviços {
+        margin-top: 15px;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .cartao {
+        box-shadow: 2px 2px 10px #015958;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    form .enviar {
+        width: 100%;
+        font-size: 16px;
+}
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer p {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .comunicacoes p {
+        font-size: 20px;
+    }
+
+    .redessociais img {
+        width: 35px;
+        margin-top: 0px;
+    }
+
+
+}   
